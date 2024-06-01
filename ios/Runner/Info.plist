@@ -41,6 +41,11 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>This application would like to access your microphone so that you can make a recording.</string>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>This application wants to access audio playback</string>
+	<key>UIBackgroundModes</key>
 	<key>CADisableMinimumFrameDurationOnPhone</key>
 	<true/>
 	<key>UIApplicationSupportsIndirectInputEvents</key>

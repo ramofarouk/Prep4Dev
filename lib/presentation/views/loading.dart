@@ -19,6 +19,7 @@ class LoadingPage extends StatelessWidget {
             AppHelpers.getSpacerHeight(4),
             Text(
               text,
+              textAlign: TextAlign.center,
               style: const TextStyle(fontSize: 20, color: Colors.black54),
             ),
           ]),

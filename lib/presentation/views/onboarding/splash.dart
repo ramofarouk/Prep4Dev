@@ -3,6 +3,8 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:prep_for_dev/presentation/widgets/logo.dart';
 
+import '../../../core/utils/preferences.dart';
+
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
 
@@ -15,7 +17,13 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     Timer(const Duration(milliseconds: 4000), () {
-      Navigator.pushReplacementNamed(context, "/on-boarding");
+      SharedPreferencesHelper.getIntValue("is_not_first").then((value) {
+        if (value == 0) {
+          Navigator.pushReplacementNamed(context, "/on-boarding");
+        } else {
+          Navigator.pushReplacementNamed(context, "/home");
+        }
+      });
     });
   }
 

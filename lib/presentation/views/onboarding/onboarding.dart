@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:prep_for_dev/core/utils/app_helpers.dart';
 import 'package:prep_for_dev/themes/app_theme.dart';
 
+import '../../../core/utils/preferences.dart';
 import '../../widgets/simple_button.dart';
 
 class OnBoardingScreen extends StatelessWidget {
@@ -44,7 +45,9 @@ class OnBoardingScreen extends StatelessWidget {
               textColor: Colors.white,
               text: 'Get Started',
               onPressed: () {
-                Navigator.pushNamed(context, '/home');
+                SharedPreferencesHelper.setIntValue("is_not_first", 1);
+                Navigator.pushNamedAndRemoveUntil(
+                    context, '/home', (route) => false);
               },
             )
           ],

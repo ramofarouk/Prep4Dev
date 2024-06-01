@@ -38,69 +38,69 @@ class TechnologyDataSource {
       title: 'Spring Boot',
       imagePath: 'assets/images/technos/spring_boot.png',
     ),
-    // TechnologyModel(
-    //   title: 'Express.js',
-    //   imagePath: 'assets/images/technos/express.png',
-    // ),
-    // TechnologyModel(
-    //   title: 'SwiftUI',
-    //   imagePath: 'assets/images/technos/swiftui.png',
-    // ),
-    // TechnologyModel(
-    //   title: 'Kotlin',
-    //   imagePath: 'assets/images/technos/kotlin.png',
-    // ),
-    // TechnologyModel(
-    //   title: 'Ionic',
-    //   imagePath: 'assets/images/technos/ionic.png',
-    // ),
-    // TechnologyModel(
-    //   title: 'Xamarin',
-    //   imagePath: 'assets/images/technos/xamarin.png',
-    // ),
-    // TechnologyModel(
-    //   title: 'Cordova',
-    //   imagePath: 'assets/images/technos/cordova.png',
-    // ),
-    // TechnologyModel(
-    //   title: 'Svelte',
-    //   imagePath: 'assets/images/technos/svelte.png',
-    // ),
-    // TechnologyModel(
-    //   title: 'Next.js',
-    //   imagePath: 'assets/images/technos/next.png',
-    // ),
-    // TechnologyModel(
-    //   title: 'Nuxt.js',
-    //   imagePath: 'assets/images/technos/nuxt.png',
-    // ),
-    // TechnologyModel(
-    //   title: 'Backbone.js',
-    //   imagePath: 'assets/images/technos/backbone.png',
-    // ),
-    // TechnologyModel(
-    //   title: 'Ember.js',
-    //   imagePath: 'assets/images/technos/ember.png',
-    // ),
-    // TechnologyModel(
-    //   title: 'ASP.NET',
-    //   imagePath: 'assets/images/technos/aspnet.png',
-    // ),
-    // TechnologyModel(
-    //   title: 'Meteor',
-    //   imagePath: 'assets/images/technos/meteor.png',
-    // ),
-    // TechnologyModel(
-    //   title: 'Blazor',
-    //   imagePath: 'assets/images/technos/blazor.png',
-    // ),
-    // TechnologyModel(
-    //   title: 'Quasar',
-    //   imagePath: 'assets/images/technos/quasar.png',
-    // ),
-    // TechnologyModel(
-    //   title: 'Gatsby',
-    //   imagePath: 'assets/images/technos/gatsby.png',
-    // ),
+    TechnologyModel(
+      title: 'Express.js',
+      imagePath: 'assets/images/technos/express.png',
+    ),
+    TechnologyModel(
+      title: 'SwiftUI',
+      imagePath: 'assets/images/technos/swiftui.png',
+    ),
+    TechnologyModel(
+      title: 'Kotlin',
+      imagePath: 'assets/images/technos/kotlin.png',
+    ),
+    TechnologyModel(
+      title: 'Ionic',
+      imagePath: 'assets/images/technos/ionic.png',
+    ),
+    TechnologyModel(
+      title: 'Xamarin',
+      imagePath: 'assets/images/technos/xamarin.png',
+    ),
+    TechnologyModel(
+      title: 'Cordova',
+      imagePath: 'assets/images/technos/cordova.png',
+    ),
+    TechnologyModel(
+      title: 'Svelte',
+      imagePath: 'assets/images/technos/svelte.png',
+    ),
+    TechnologyModel(
+      title: 'Next.js',
+      imagePath: 'assets/images/technos/next.png',
+    ),
+    TechnologyModel(
+      title: 'Nuxt.js',
+      imagePath: 'assets/images/technos/nuxt.png',
+    ),
+    TechnologyModel(
+      title: 'Backbone.js',
+      imagePath: 'assets/images/technos/backbone.png',
+    ),
+    TechnologyModel(
+      title: 'Ember.js',
+      imagePath: 'assets/images/technos/ember.png',
+    ),
+    TechnologyModel(
+      title: 'ASP.NET',
+      imagePath: 'assets/images/technos/aspnet.png',
+    ),
+    TechnologyModel(
+      title: 'Meteor',
+      imagePath: 'assets/images/technos/meteor.png',
+    ),
+    TechnologyModel(
+      title: 'Blazor',
+      imagePath: 'assets/images/technos/blazor.png',
+    ),
+    TechnologyModel(
+      title: 'Quasar',
+      imagePath: 'assets/images/technos/quasar.png',
+    ),
+    TechnologyModel(
+      title: 'Adonis.js',
+      imagePath: 'assets/images/technos/gatsby.png',
+    ),
   ];
 }

@@ -1,19 +1,31 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:prep_for_dev/domain/entities/technology.dart';
 
 import '../../core/utils/app_helpers.dart';
 import '../../themes/app_theme.dart';
+import '../viewmodels/game.dart';
+import '../viewmodels/home.dart';
 
-class TechnologyCard extends StatelessWidget {
+class TechnologyCard extends ConsumerWidget {
   final Technology technology;
-  const TechnologyCard({required this.technology, super.key});
+  final BuildContext parentContext;
+  const TechnologyCard({
+    required this.technology,
+    required this.parentContext,
+    super.key,
+  });
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
+    final homeViewProvider = ref.watch(homeViewModelProvider);
+    final gameViewModel = ref.watch(gameViewModelProvider);
+
     return GestureDetector(
       onTap: () {
-        showModalBottomSheet(context);
+        homeViewProvider.changeQuestion(technology.title);
+        showModalBottomSheet(parentContext, homeViewProvider, gameViewModel);
       },
       child: Card(
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
@@ -47,7 +59,8 @@ class TechnologyCard extends StatelessWidget {
     );
   }
 
-  static showModalBottomSheet(BuildContext context) {
+  static showModalBottomSheet(
+      BuildContext context, homeViewModel, gameViewModel) {
     showBottomSheet(
         context: context,
         builder: (ctx) {
@@ -78,37 +91,54 @@ class TechnologyCard extends StatelessWidget {
                         color: Colors.white,
                         size: 18,
                       ),
-                      onTap: () => Navigator.pop(context),
+                      onTap: () => Navigator.pop(ctx),
                     )
                   ],
                 ),
                 AppHelpers.getSpacerHeight(2),
-                getLevelCard("Junior Developer"),
-                getLevelCard("Mid-Level Developer"),
-                getLevelCard("Senior Developer")
+                getLevelCard("Junior Developer", context, ctx, homeViewModel,
+                    gameViewModel),
+                getLevelCard("Mid-Level Developer", context, ctx, homeViewModel,
+                    gameViewModel),
+                getLevelCard("Senior Developer", context, ctx, homeViewModel,
+                    gameViewModel)
               ],
             ),
           );
         });
   }
 
-  static getLevelCard(String level) {
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
-      margin: const EdgeInsets.symmetric(vertical: 10),
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(15),
-        color: Colors.white60,
-      ),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          Text(
-            level,
-            style: const TextStyle(fontWeight: FontWeight.bold),
-          ),
-          const FaIcon(FontAwesomeIcons.arrowRight)
-        ],
+  static getLevelCard(
+      String level, context, localContext, homeViewModel, gameViewModel) {
+    return GestureDetector(
+      onTap: () {
+        Navigator.pop(localContext);
+        homeViewModel.changeLevel(level);
+        homeViewModel.setLoading(true);
+        homeViewModel.fetchQuestions().then((value) {
+          if (value) {
+            gameViewModel.reset();
+            Navigator.pushNamed(context, "/game");
+          } else {}
+        });
+      },
+      child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+        margin: const EdgeInsets.symmetric(vertical: 10),
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(15),
+          color: Colors.white60,
+        ),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Text(
+              level,
+              style: const TextStyle(fontWeight: FontWeight.bold),
+            ),
+            const FaIcon(FontAwesomeIcons.arrowRight)
+          ],
+        ),
       ),
     );
   }

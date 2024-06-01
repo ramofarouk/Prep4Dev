@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:prep_for_dev/presentation/views/game.dart';
 import 'package:prep_for_dev/presentation/views/home.dart';
 
 import '../views/onboarding/onboarding.dart';
@@ -13,10 +14,8 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const OnBoardingScreen());
       case '/home':
         return MaterialPageRoute(builder: (_) => const HomeView());
-      // case '/dashboard':
-      //   final args = settings.arguments as CustomArgument;
-      //   return MaterialPageRoute(
-      //       builder: (_) => DashboardScreen(index: args.data));
+      case '/game':
+        return MaterialPageRoute(builder: (_) => GameView());
       default:
         return MaterialPageRoute(
             builder: (_) => const Scaffold(
@@ -24,10 +23,4 @@ class AppRouter {
                 ));
     }
   }
-}
-
-class CustomArgument {
-  final int data;
-
-  CustomArgument(this.data);
 }

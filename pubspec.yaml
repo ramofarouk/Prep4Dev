@@ -39,6 +39,13 @@ dependencies:
   flutter_riverpod:
   dartz:
   flutter_dotenv: ^5.1.0
+  google_generative_ai:
+  flutter_sound: ^9.2.13
+  audio_session: ^0.1.18
+  permission_handler: ^11.3.0
+  path_provider: ^2.1.2
+  shared_preferences: ^2.2.2
+  dio:
 
 dev_dependencies:
   flutter_test:
