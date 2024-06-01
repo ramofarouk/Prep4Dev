@@ -1,6 +1,6 @@
 # Prep4Dev
 
-![Application Logo](logo_link.png)
+![logo](https://github.com/ramofarouk/Prep4Dev/assets/35071109/bbe6d6c3-3ece-4b01-af89-3d09f1c2aeef)
 
 A mini application developed with Flutter and powered by Gemini API to help developers prepare effectively for their technical interviews.
 
@@ -12,9 +12,10 @@ A mini application developed with Flutter and powered by Gemini API to help deve
 
 ## Screenshots
 
-![Screenshot 1](screenshot1_link.png)
-![Screenshot 2](screenshot2_link.png)
-![Screenshot 3](screenshot3_link.png)
+![Screenshot_1717218628](https://github.com/ramofarouk/Prep4Dev/assets/35071109/bb3f6dcb-05c3-4db8-bbd6-5c566698766c)
+![Screenshot_1717218670](https://github.com/ramofarouk/Prep4Dev/assets/35071109/40910693-7a82-4031-8620-ab3cde459900)
+![Screenshot_1717218662](https://github.com/ramofarouk/Prep4Dev/assets/35071109/6283c0af-188b-4b2b-847f-76e88b1c4b75)
+
 
 ## Installation
 
@@ -36,7 +37,7 @@ A mini application developed with Flutter and powered by Gemini API to help deve
 
 ## Authors
 
-- Omar Farouk - [ramofarouk](github_profile_link)
+- Omar Farouk - [ramofarouk](https://github.com/ramofarouk)
 
 ## License
 
