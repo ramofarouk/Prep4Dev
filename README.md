@@ -23,7 +23,7 @@ A mini application developed with Flutter and powered by Gemini API to help deve
 2. Ensure you have Flutter installed on your system. If not, follow the instructions on the official Flutter website: [https://flutter.dev/docs/get-started/install](https://flutter.dev/docs/get-started/install)
 3. Run `flutter pub get` to install dependencies.
 4. Connect to Gemini API and obtain your API keys.
-5. Add your API keys in the `config.dart` file located in the `lib` folder.
+5. Create `.env` file at the root and add your API keys in the.
 6. Run the application using the command `flutter run`.
 
 ## Contributing
