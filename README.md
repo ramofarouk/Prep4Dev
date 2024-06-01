@@ -12,8 +12,8 @@ A mini application developed with Flutter and powered by Gemini API to help deve
 
 <p align="center">
   <img src="https://github.com/ramofarouk/Prep4Dev/assets/35071109/bb3f6dcb-05c3-4db8-bbd6-5c566698766c" alt="Screenshot 1" width="250"/>
-  <img src="(https://github.com/ramofarouk/Prep4Dev/assets/35071109/40910693-7a82-4031-8620-ab3cde459900)" alt="Screenshot 2" width="250"/>
-  <img src="(https://github.com/ramofarouk/Prep4Dev/assets/35071109/6283c0af-188b-4b2b-847f-76e88b1c4b75)" alt="Screenshot 3" width="250"/>
+  <img src="https://github.com/ramofarouk/Prep4Dev/assets/35071109/40910693-7a82-4031-8620-ab3cde459900" alt="Screenshot 2" width="250"/>
+  <img src="https://github.com/ramofarouk/Prep4Dev/assets/35071109/6283c0af-188b-4b2b-847f-76e88b1c4b75" alt="Screenshot 3" width="250"/>
 </p>
 
 
