@@ -14,6 +14,7 @@ class QuestionModel extends Question {
     for (var item in json['answers']) {
       answers.add(AnswerModel.fromJson(item));
     }
+    answers.shuffle();
     return QuestionModel(
       label: json['label'],
       answers: answers,
